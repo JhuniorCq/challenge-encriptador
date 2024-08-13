@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background-color: #F3F5FC;
+}
+
+.seccion-1 {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 15%;
+}
+
+.seccion-1 h1 {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    align-content: center;
+    color: #0A3871;
+    font-size: 2rem;
+}
+
+.seccion-1 .caja-encriptador {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0 50px 0;
+}
+
+.caja-encriptador input {
+    padding: 15px 20px;
+    color: #0A3871;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    overflow-wrap: anywhere;
+}
+
+.caja-encriptador input::placeholder {
+    color: #0A3871;
+    background-color: transparent;
+}
+
+.caja-opciones-encriptador {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
+.caja-opciones-encriptador p {
+    color: #495057;
+}
+
+.caja-botones {
+    display: flex;
+    gap: 10px;
+}
+
+.boton {
+    height: 50px;
+    border: 1px solid #0A3871;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#boton-encriptar {
+    width: 48%;
+    background-color: #0A3871;
+    color: white;
+}
+
+#boton-desencriptar {
+    width: 48%;
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+
+#boton-copiar {
+    width: 80%;
+    background-color: transparent;
+    color: #0A3871;
+    margin-top: auto;
+}
+
+.seccion-2 {
+    width: 30%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja-texto-encriptado {
+    width: 80%;
+    height: 650px;
+    background-color: white;
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, .1);
+    padding: 50px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+}
+
+.caja-texto-encriptado h2 {
+    color: #0A3871;
+}
+
+.caja-texto-encriptado img {
+    height: 200px;
+}
+
+.texto-encriptado {
+    width: 100%;
+    height: 90%;
+    color: #0A3871;
+    font-size: 1.5rem;
+    text-align: center;
+    overflow-y: auto;
+    overflow-wrap: anywhere;
+}
+
+footer {
+    width: 100%;
+    padding: 30px;
+    background-color: #8699ab;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.nombre-autor {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.github {
+    font-size: 1.8rem;
+    color: #0A3871;
+    transition: color .3s ease-in-out;
+}
+
+.github:hover {
+    color: white;
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+    .seccion-1 {
+        width: 60%;
+        padding: 40px 10%;
+    }
+
+    .seccion-2 {
+        width: 40%;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 799px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccion-1 {
+        width: 100%;
+        padding: 40px 10%;
+    }
+
+    .caja-encriptador {
+        gap: 50px;
+    }
+
+    .seccion-2 {
+        width: 100%;
+    }
+
+    .caja-texto-encriptado {
+        padding: 50px 30px;
+        height: 350px;
+    }
+    
+    .texto-encriptado {
+        height: 80%;
+    }
+}
+
+@media (max-width: 399px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccion-1 {
+        width: 100%;
+        padding: 40px 10%;
+    }
+
+    .seccion-1 h1 {
+        font-size: 1.8rem;
+    }
+
+    .caja-encriptador input {
+        font-size: 1.2rem;
+    }
+
+    .caja-encriptador {
+        gap: 50px;
+    }
+
+    .seccion-2 {
+        width: 100%;
+    }
+
+    .caja-texto-encriptado {
+        padding: 50px 30px;
+        height: 350px;
+    }
+
+    .caja-botones {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    #boton-encriptar {
+        width: 100%;
+    }
+    
+    #boton-desencriptar {
+        width: 100%;
+    }
+    
+    #boton-copiar {
+        width: 100%;
+    }
+
+    .texto-encriptado {
+        height: 80%;
+        font-size: 1.4rem;
+    }
+}
